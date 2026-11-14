@@ -10,9 +10,9 @@ const sendBtn = document.getElementById("sendBtn");
 const latestQuestion = document.getElementById("latestQuestion");
 
 /* Your Cloudflare Worker URL.
-   Replace this with the URL Cloudflare gives you after you deploy your Worker.
+   The Worker sends our messages to OpenAI and sends the reply back.
    (No API key goes here — the key lives safely inside Cloudflare.) */
-const WORKER_URL = "https://YOUR-WORKER-NAME.YOUR-SUBDOMAIN.workers.dev/";
+const WORKER_URL = "https://loreal-chatbot.tavionb2003.workers.dev/";
 
 /* System prompt: tells the AI who it is and what it may talk about */
 const systemPrompt = `You are the L'Oréal Beauty Advisor, a friendly and knowledgeable assistant for L'Oréal.
